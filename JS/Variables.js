@@ -7,12 +7,9 @@ console.log("Hola Mundo");
 
 /* 1. Variables var = let, const */
 
-const Nombre = "Rosita";
-const Apellido = "Jarquin";
+let Nombre = "Rosita";
+let Apellido = "Jarquin";
 let Edad = 27;
-var Direccion= "Puntarenas Centro";
+let Direccion= "Puntarenas Centro";
 
-console.log(Nombre);
-console.log(Apellido);
-console.log(Edad);
-console.log(Direccion);
+console.log("Hola mi nombre es : "+ Nombre +", Y mi apellido es "+ Apellido +"mi edad es "+ Edad +" vivo en "+ Direccion);
