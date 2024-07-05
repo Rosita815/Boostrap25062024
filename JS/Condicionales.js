@@ -71,3 +71,29 @@ if(edad >= 18){ /* Si */
 }else{ /* Si no */
     alert("Eres menor de edad");
 };
+
+const Persona = "pato";
+
+if (Perosna == "david"){
+
+}
+else if (Persona == "David"){
+
+}else if (Persona == "DAVID"){
+
+};
+
+let MiPlataforma = "HBO";
+let MiPlataforma2 ="amazon";
+
+if(MiPlataforma2 === "HBO" && MiPlataforma2 ==="Netflix" || MiPlataforma2 === "amazon"){
+    console.log("Esta noche vemos una serie");
+}
+else{
+    console.log("Esta noche vemos una serie");
+};
+
+/* Operación ternario */
+let Animal = "Tigre";
+
+/* const saludo = Animal == "Mono"? "Hola" */
