@@ -22,7 +22,7 @@ console.log(Estudiante.Materias[2]);
 /* Declaren el siguiente objeto Auto 4 propiedades y 1 Array*/
 
 let Auto = {
-    Colore: ["Verde","Blanco","Negro"],
+    Colores: ["Verde","Blanco","Negro"],
     Año: 2024,
     Disponible: true,
     Marcas: ["Toyota","Mercedez Benz","Suzuky"]
