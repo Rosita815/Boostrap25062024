@@ -20,6 +20,6 @@ let Persona = {
     nombre: "Rosita",
     edad: 27,
     tieneMascotas: true
-} /* Objeto{} */
+}; /* Objeto{} */
 
 /* Fin de Zona para declarar variables */

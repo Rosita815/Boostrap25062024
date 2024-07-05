@@ -13,7 +13,7 @@ let Apellido = "Jarquin";
 let Edad = 27;
 let Direccion= "Puntarenas Centro";
 let Mensaje = "Hola mi nombre es: "+ Nombre +" y mi apellido es: "+ Apellido +" mi edad es: "+ Edad +" vivo en: "+ Direccion;
-let Mensaje2 = " Es usted mayor de edad?"
+let Mensaje2 = " Es usted mayor de edad?";
 let Ventana;
 
 
