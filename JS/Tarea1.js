@@ -26,9 +26,10 @@ if (Edad >= 18) {
 //3-Crear un objeto con información de un libro y mostrar una propiedad
 // Crear un objeto llamado 'libro' con propiedades 'titulo', 'autor' y 'anio'
 let libro = {
-    titulo: "El cuervo", 
-    autor: "Edgar Allan Poe", 
-    anio: 1843};
+    titulo: "El cuervo",
+    autor: "Edgar Allan Poe",
+    anio: 1843
+};
 let Mensaje = "El libro fue escrito por :" + libro.autor;
 // Mostrar la propiedad "El libro fue escrito por : 'autor' " 'autor' del objeto en la consola
 console.log(Mensaje);
@@ -81,8 +82,8 @@ switch (dia) {
 //6-Crear un array y mostrar la posicion 7 y 0
 // Crear un array llamado 'Pokemones' con al menos 10 Especies
 
-let Pokemones = ["Bicho","Dragon","Electrico","Hada", "Lucha", "Fuego", "Volador", "Fantasma", "Planta", "Tierra"];
-console.log(Pokemones[7]+" y "+Pokemones[0]);
+let Pokemones = ["Bicho", "Dragon", "Electrico", "Hada", "Lucha", "Fuego", "Volador", "Fantasma", "Planta", "Tierra"];
+console.log(Pokemones[7] + " y " + Pokemones[0]);
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 //7-Usar un operador lógico para verificar si un número está en un rango
 // Solicitar al usuario ingresar un número
@@ -123,14 +124,14 @@ puede votar si tiene 18 años o más y es de nacionalidad 'peruana' o 'colombian
 let nacionalidad = prompt("Ingresa tu nacionalidad:");
 
 // Función para verificar si la persona puede votar
-function puedeVotar(Edad, nacionalidad){
-    if (Edad >= 18 && nacionalidad == "peruana" || "colombiana") {
+function puedeVotar(Edad, nacionalidad) {
+    if (Edad >= 18 && nacionalidad == "peruana" || nacionalidad == "colombiana") {
         console.log("La persona puede votar");
-    }else {
+    } else {
         console.log("La persona no puede votar");
     }
 };
-console.log(puedeVotar(Edad,nacionalidad));
+console.log(puedeVotar(Edad, nacionalidad));
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 //11  Determinar si una persona está en edad escolar
@@ -144,10 +145,10 @@ function verificarEdad(edad) {
     if (edad >= 6 && edad <= 18) {
         console.log("Edad escolar");
     }
-     if(edad >= 65) {
+    else if (edad >= 65) {
         console.log("Adulto mayor");
     }
-    else{
+    else {
         console.log("Edad no escolar, ni adulto mayor");
     }
 };
