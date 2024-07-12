@@ -27,9 +27,16 @@
                     class="form-control" name="" id="Num2" aria-describedby="helpId" placeholder="">
                   <small id="helpId" class="form-text text-muted">Help text</small>
                 </div>
-                <button type="submit" class="btn btn-primary btn-block" onclick="Sumar(event)">Sumar</button>
-                <br>
-                <button type="submit" class="btn btn-primary btn-block" onclick="Restar(event)">Restar</button>
+                <div class="form-group">
+                  <label for="">Selccione la operación</label>
+                  <select class="form-control" name="" id="operaciones">
+                    <option value="-">Resta</option>
+                    <option value="+">Suma</option>
+                    <option value="*">Multiplicación</option>
+                    <option value="/">Division</option>
+                  </select>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block" onclick="Calculadora2(event)">Calcular</button>
             </form>
             <div id="Resultado">
             </div>
