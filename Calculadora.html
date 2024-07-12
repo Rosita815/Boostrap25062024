@@ -18,20 +18,22 @@
                 <div class="form-group">
                   <label for="">Ingrese el primer valor</label>
                   <input type="text"
-                    class="form-control" name="" id="Valor1" aria-describedby="helpId" placeholder="">
+                    class="form-control" name="" id="Num1" aria-describedby="helpId" placeholder="">
                   <small id="helpId" class="form-text text-muted">Help text</small>
                 </div>
                 <div class="form-group">
                   <label for="">Ingrese el segundo valor</label>
                   <input type="text"
-                    class="form-control" name="" id="Valor2" aria-describedby="helpId" placeholder="">
+                    class="form-control" name="" id="Num2" aria-describedby="helpId" placeholder="">
                   <small id="helpId" class="form-text text-muted">Help text</small>
                 </div>
-                <button type="submit" class="btn btn-primary btn-block" onclick="Calcular()">Calcular</button>
+                <button type="submit" class="btn btn-primary btn-block" onclick="Sumar(event)">Sumar</button>
+                <br>
+                <button type="submit" class="btn btn-primary btn-block" onclick="Restar(event)">Restar</button>
             </form>
-            <div id="ValorRespuesta">
-                Aquií va la respuesta
+            <div id="Resultado">
             </div>
+
         </div>
     </div>
     <!-- Optional JavaScript -->

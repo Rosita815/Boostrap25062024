@@ -3,8 +3,8 @@ console.log("Funcionando");
 /* Formulario Nombre y Apellido
 Y darle click, Mostrar en un Div */
 
-function Guardar() {
-
+function Guardar(event) {
+    event.preventDefault();
     const Formulario = document.getElementById("Formulario");
     const Valor1 = document.getElementById("Valor1").value;
     const Valor2 = document.getElementById("Valor2").value;
