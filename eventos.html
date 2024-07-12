@@ -1,0 +1,50 @@
+<style>
+    #miDiv {
+        width: 200px;
+        height: 200px;
+        background-color: lightblue;
+    }
+</style>
+
+
+<button id="miBoton">Click</button>
+<input type=" text" name="" id="miInput" placeholder="Escribe algo">
+<div id="miDiv"></div>
+<br>
+<br>
+<form id="miFormulario">
+    <input type="text" name="nombre" id="" placeholder="Mi Nombre">
+    <input type="submit" value="enviar">
+</form>
+
+<script>
+/*  Evento de envio de formulario*/
+document.getElementById("miFormulario").addEventListener("submit",function(event){
+    event.preventDefault();
+    alert("aaaa");
+})
+
+/* Evento de pasar el mouse por encima*/
+document.getElementById("miDiv").addEventListener("mouseout",function(){
+    this.style.backgroundColor="yellow";
+});
+document.getElementById("miDiv").addEventListener("mouseover",function(){
+    this.style.backgroundColor="green";
+});
+   /*  function saludar() {
+        
+    }
+    function saludar(evento,nombre,apellido) {
+        
+    } */
+    /* ++++++++++++++++_Function_anonima_++++++++++++++++++*/
+   /*  const saludo = function () {
+        
+    }
+    const saludos = function (evento,nombre,apellido) {
+        
+    }
+     */
+    /*+++++++++++++_Function_flecha_++++++++++++++*/
+    /* const Calcular = (num1, num2) => a+b */
+</script>
