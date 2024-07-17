@@ -9,7 +9,7 @@ function Mostar_NavBar() {
     let Opcion1 = "Inicio"
     let Opcion2 = "Listado de Productos"
     let Opcion3 = "Crear Producto"
-    let Opcion4 = "Pagina de Pedidos"
+    let Opcion4 = "Pagina Ventas"
     let Contenedor = document.getElementById('V_NavBar')
     let Plantilla = `<a class="navbar-brand" href="#">Navbar</a>
             <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
