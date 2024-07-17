@@ -6,9 +6,9 @@ Mostar_NavBar();
    let Plantilla = "Hola mundo"
    Contenedor.innerHTML = Plantilla */
 function Mostar_NavBar() {
-    let Opcion1 = "Pagina de Ventas"
-    let Opcion2 = "Pagina de Factura"
-    let Opcion3 = "Pagina de FacturaDetalle"
+    let Opcion1 = "Inicio"
+    let Opcion2 = "Listado de Productos"
+    let Opcion3 = "Crear Producto"
     let Opcion4 = "Pagina de Pedidos"
     let Contenedor = document.getElementById('V_NavBar')
     let Plantilla = `<a class="navbar-brand" href="#">Navbar</a>
@@ -19,22 +19,13 @@ function Mostar_NavBar() {
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="index.html">${Opcion1} <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="List-Products.html">Listado de Productos</a>
+                        <a class="nav-link" href="List-Products.html">${Opcion2}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="New-Product.html">Crear Producto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">${Opcion1}</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">${Opcion2}</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">${Opcion3}</a>
+                        <a class="nav-link" href="New-Product.html">${Opcion3}</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">${Opcion4}</a>
