@@ -1,13 +1,14 @@
 console.log("Funciona")
 
-
-Navegacion();
+/* Componente NavBar */
+Mostar_NavBar();
 /* let Contenedor = ID
-   let contenido = "Hola mundo"
-   Contenedor.innerHTML = contenido */
-function Navegacion() {
-    let V_NavBar = document.getElementById('V_NavBar')
-    let contenido = `<a class="navbar-brand" href="#">Navbar</a>
+   let Plantilla = "Hola mundo"
+   Contenedor.innerHTML = Plantilla */
+function Mostar_NavBar() {
+    let NuevaOpcion = "Pagina de Ventas"
+    let Contenedor = document.getElementById('V_NavBar')
+    let Plantilla = `<a class="navbar-brand" href="#">Navbar</a>
             <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -22,6 +23,9 @@ function Navegacion() {
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="New-Product.html">Crear Producto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">${NuevaOpcion}</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
@@ -39,7 +43,7 @@ function Navegacion() {
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                 </form>
             </div> `
-    V_NavBar.innerHTML = contenido;
+        Contenedor.innerHTML = Plantilla;
 }
 
 
