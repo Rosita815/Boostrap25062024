@@ -1,11 +1,12 @@
-console.log("Funciona")
 
 /* Componente NavBar */
-Mostar_NavBar();
-/* Objetos JS
-   let Contenedor = ID
-   let Plantilla = "Hola mundo"
-   Contenedor.innerHTML = Plantilla */
+document.addEventListener('DOMContentLoaded', () => {
+    Mostar_NavBar();
+})
+
+
+
+
 function Mostar_NavBar() {
     /* let Opcion1 = "Inicio"
     let Opcion2 = "Listado de Productos"
