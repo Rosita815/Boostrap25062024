@@ -1,13 +1,51 @@
+let personas = [
+    { id: 1, nombre: "Ana" },
+    { id: 2, nombre: "Juan"  },
+    { id: 3, nombre: "Pedro"},
+    { id: 4, nombre: "Juana"},
+    
+];
+
+let animales = [
+    { id: 1, nombre: "Lolo", apellido: "Drama", edad: 2 },
+    { id: 2, nombre: "Firulai", apellido: "Drama", edad: 2 },
+    { id: 3, nombre: "Manchas", apellido: "Drama", edad: 2 },
+    { id: 4, nombre: "Bruno", apellido: "Drama", edad: 2 },
+    
+];
+
+let plantas = [
+    { id: 1, nombre: "Menta", apellido: "Drama", edad: 2 },
+    { id: 2, nombre: "Pastora", apellido: "Drama", edad: 2 },
+    { id: 3, nombre: "Rosa", apellido: "Drama", edad: 2 },
+    { id: 4, nombre: "Veranera", apellido: "Drama", edad: 2 },
+];
+
+function mostrarNombres(datos) {
+    datos.forEach(element => {
+        console.log(element.nombre);
+    });
+}
+
+// Ejemplo de uso:
+mostrarNombres(personas);
+mostrarNombres(animales);
+mostrarNombres(plantas);
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 let series = [
     { id: 1, Serie: "Ana", Categoria: "Drama", Temporadas: 2 },
     { id: 2, Serie: "Stranger Things", Categoria: "Ciencia Ficción", Temporadas: 4 },
     { id: 3, Serie: "The Crown", Categoria: "Historia", Temporadas: 5 },
     { id: 4, Serie: "La Casa de Papel", Categoria: "Crimen", Temporadas: 5 }
 ];
+
+
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-function mostrarNombresSeries(datos) {
-    datos.forEach(series => {
-        console.log(series.Serie);
+function mostrarNombresSeries(series) {
+    series.forEach(element => {
+        console.log(element.Serie);
     });
 }
 mostrarNombresSeries(series)
@@ -15,18 +53,18 @@ mostrarNombresSeries(series)
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 function mostrarLongitudNombres(datos) {
-    datos.forEach(series => {
-        const longitud = series.Serie.length;
-        console.log(`${series.Serie} tiene un longitud de: ${longitud}`);
+    datos.forEach(element => {
+        const longitud = element.Serie.length;
+        console.log(`${element.Serie} tiene un longitud de: ${longitud}`);
     });
 }
 mostrarLongitudNombres(series)
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
-function mostrarNombresMayusculas(datos) {
-    datos.forEach(series => {
-        const Mayuscula = series.Serie.toUpperCase();
+function mostrarNombresMayusculas(series) {
+    series.forEach(element => {
+        const Mayuscula = element.Serie.toUpperCase();
         console.log(Mayuscula);
     });
 }
@@ -66,9 +104,9 @@ agregarSerie(series,"Masacre Texas")
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 function extraerSubcadenaNombres(datos, inicio, final) {
-    datos.forEach(series => {
-        const subcadena = series.Serie.slice(inicio, final);
-        console.log(`La subcadena del nombre de la serie "${series.Serie}" es: "${subcadena}"`);
+    datos.forEach(element => {
+        const subcadena = element.Serie.slice(inicio, final);
+        console.log(`La subcadena del nombre de la serie "${element.Serie}" es: "${subcadena}"`);
     });
 }
 extraerSubcadenaNombres(series, 0, 4);
@@ -95,4 +133,7 @@ function verificarPalabraEnNombres(datos, palabra) {
         }
     });
 }
-verificarPalabraEnNombres(series, 'Alberto');
+
+verificarPalabraEnNombres(series, 'Things');
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
