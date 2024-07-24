@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica de JavaScript</title>
+</head>
+
+<body>
+    <div>
+        <pre><code>
+            let series = [
+                { id: 1, Serie: "Ana", Categoria: "Drama", Temporadas: 2 },
+                { id: 2, Serie: "Stranger Things", Categoria: "Ciencia Ficción", Temporadas: 4 },
+                { id: 3, Serie: "The Crown", Categoria: "Historia", Temporadas: 5 },
+                { id: 4, Serie: "La Casa de Papel", Categoria: "Crimen", Temporadas: 5 }
+            ];
+        </code></pre>
+    </div>
+
+    <h2>Ejercicio 1: Mostrar nombres de series</h2>
+    <p>Este ejercicio muestra cómo iterar sobre un arreglo de objetos y mostrar solo los nombres de las series.</p>
+    <pre><code>
+function mostrarNombresSeries(datos) {
+    // Reemplaza "array" por tu arreglo "series", cada uno quedará en "item"
+    datos.forEach(item => {
+        // Escribe aquí el código para mostrar el nombre de la serie
+    });
+}
+ function mostrarNombresSeries(datos) {
+    datos.forEach(series => {
+        console.log(series.Serie);
+    });
+}
+mostrarNombresSeries(series)   
+    </code></pre>
+
+    <h2>Ejercicio 2: Mostrar la longitud del nombre de cada serie</h2>
+    <p>Este ejercicio muestra cómo obtener la longitud de los nombres de las series.</p>
+    <pre><code>
+function mostrarLongitudNombres(datos) {
+    datos.forEach(item => {
+        // Escribe aquí el código para mostrar la longitud del nombre de la serie
+    });
+}
+function mostrarLongitudNombres(datos) {
+    datos.forEach(series => {
+        const longitud = series.Serie.length;
+        console.log(`${series.Serie} tiene un longitud de: ${longitud}`);
+    });
+}
+mostrarLongitudNombres(series)
+    </code></pre>
+
+    <h2>Ejercicio 3: Mostrar nombres de series en mayúsculas</h2>
+    <p>Este ejercicio muestra cómo convertir los nombres de las series a mayúsculas.</p>
+    <pre><code>
+function mostrarNombresMayusculas(datos) {
+    datos.forEach(item => {
+        // Escribe aquí el código para convertir el nombre de la serie a mayúsculas y mostrarlo
+    });
+}
+function mostrarNombresMayusculas(datos) {
+    datos.forEach(series => {
+        const Mayuscula = series.Serie.toUpperCase();
+        console.log(Mayuscula);
+    });
+}
+mostrarNombresMayusculas(series)
+    </code></pre>
+
+    <h2>Ejercicio 4: Mostrar nombres de series en minúsculas</h2>
+    <p>Este ejercicio muestra cómo convertir los nombres de las series a minúsculas.</p>
+    <pre><code>
+function mostrarNombresMinusculas(datos) {
+    datos.forEach(item => {
+        // Escribe aquí el código para convertir el nombre de la serie a minúsculas y mostrarlo
+    });
+}
+function mostrarNombresMinusculas(datos) {
+    datos.forEach(series => {
+        const Minuscula = series.Serie.toLowerCase();
+        console.log(Minuscula);
+    });
+}
+mostrarNombresMinusculas(series)
+    </code></pre>
+
+    <h2>Ejercicio 5: Encontrar una serie por nombre</h2>
+    <p>Este ejercicio muestra cómo encontrar una serie específica por su nombre.</p>
+    <pre><code>
+function encontrarSeriePorNombre(datos, nombre) {
+    let serieEncontrada = datos.find(item => item.Serie === nombre);
+    // Escribe aquí el código para mostrar si la serie fue encontrada o no
+}
+function encontrarSeriePorNombre(datos,nombre) {
+    let serieEncontrada = datos.find(series => series.Serie === nombre);
+
+    if (serieEncontrada) {
+        console.log(`La serie "${nombre}" fue encontrada:`, serieEncontrada);
+    } else {
+        console.log(`La serie "${nombre}" no fue encontrada.`);
+    }
+}
+encontrarSeriePorNombre(series,"Stranger Things")
+    </code></pre>
+
+    <h2>Ejercicio 6: Añadir una nueva serie</h2>
+    <p>Este ejercicio muestra cómo añadir una nueva serie al arreglo.</p>
+    <pre><code>
+function agregarSerie(datos, nuevaSerie) {
+    datos.push(nuevaSerie);
+    // Escribe aquí el código para mostrar que la nueva serie fue añadida y la lista actualizada
+}
+function agregarSerie(datos,nuevaSerie) {
+    datos.push(nuevaSerie);
+    console.log(`Ingreso serie nueva: ${nuevaSerie}`);
+}
+agregarSerie(series,"Masacre Texas")
+    </code></pre>
+
+    <h2>Ejercicio 7: Extraer una subcadena de los nombres de las series</h2>
+    <p>Este ejercicio muestra cómo extraer una subcadena del nombre de cada serie usando
+        <code>slice(inicio, final)</code>.</p>
+    <pre><code>
+function extraerSubcadenaNombres(datos, inicio, final) {
+    datos.forEach(item => {
+        // Escribe aquí el código para extraer y mostrar la subcadena del nombre de la serie
+    });
+}
+function extraerSubcadenaNombres(datos, inicio, final) {
+    datos.forEach(series => {
+        const subcadena = series.Serie.slice(inicio, final);
+        console.log(`La subcadena del nombre de la serie "${series.Serie}" es: "${subcadena}"`);
+    });
+}
+extraerSubcadenaNombres(series, 0, 4);
+    </code></pre>
+
+    <h2>Ejercicio 8: Reemplazar una palabra en los nombres de las series</h2>
+    <p>Este ejercicio muestra cómo reemplazar una palabra en los nombres de las series usando
+        <code>replace(string, string)</code>.</p>
+    <pre><code>
+function reemplazarPalabraNombres(datos, buscar, reemplazar) {
+    datos.forEach(item => {
+        // Escribe aquí el código para reemplazar y mostrar el nombre de la serie modificado
+    });
+}
+
+function reemplazarPalabraNombres(datos, buscar, reemplazar) {
+    datos.forEach(series => {
+        const reemplazarPalabra = series.Serie.replace(buscar, reemplazar);
+        console.log(`El nombre modificado de la serie "${series.Serie}" es: "${reemplazarPalabra}"`);
+    });
+}
+reemplazarPalabraNombres(series, 'Ana', 'Alberto');
+    </code></pre>
+
+    <h2>Ejercicio 9: Verificar si los nombres de las series contienen una palabra</h2>
+    <p>Este ejercicio muestra cómo verificar si los nombres de las series contienen una palabra específica usando
+        <code>includes(string)</code>.</p>
+    <pre><code>
+function verificarPalabraEnNombres(datos, palabra) {
+    datos.forEach(item => {
+        // Escribe aquí el código para verificar y mostrar si el nombre de la serie contiene la palabra
+    });
+}
+
+function verificarPalabraEnNombres(datos, palabra) {
+    datos.forEach(series => {
+        const contienePalabra = series.Serie.includes(palabra);
+        if (contienePalabra) {
+            console.log(`El nombre de la serie "${series.Serie}" contiene la palabra "${palabra}".`);
+        } else {
+            console.log(`El nombre de la serie "${series.Serie}" no contiene la palabra "${palabra}".`);
+        }
+    });
+}
+verificarPalabraEnNombres(series, 'Alberto');
+    </code></pre>
+    <script src="Practica.js"></script>
+</body>
+
+</html>

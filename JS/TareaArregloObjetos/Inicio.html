@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explicación de forEach</title>
+</head>
+
+<body>
+    <h1>¿Qué es forEach?</h1>
+    <p>El método <code>forEach</code> es una función en JavaScript que se usa para iterar sobre los elementos de un
+        arreglo. Permite ejecutar una función específica en cada elemento del arreglo, proporcionando una manera más
+        sencilla y legible de trabajar con los elementos de un arreglo.</p>
+
+    <h2>Sintaxis básica con función flecha</h2>
+    <p>La sintaxis básica de <code>forEach</code> utilizando una función flecha es la siguiente:</p>
+    <pre><code>
+        Solo escribe en Visual studio Code <strong>Foreach</strong> ahora reemplaza "array" por tu arreglo "series", cada uno quedará en "item" si posee objetos coloca "item.propiedad"
+array.forEach(element => {
+    // Código a ejecutar por cada elemento
+});
+    </code></pre>
+    <h2>Ejemplo simple</h2>
+    <p>Imagina que tienes una caja de juguetes y quieres mostrar el nombre de cada juguete uno por uno. Vamos a crear un
+        arreglo de juguetes y usar <code>forEach</code> para decir el nombre de cada juguete.</p>
+    <pre><code>
+// Arreglo de juguetes
+let juguetes = ["Carro", "Muñeca", "Pelota", "Tren"];
+
+// Usamos forEach para decir el nombre de cada juguete
+juguetes.forEach(juguete => {
+    console.log(juguete);
+});
+    </code></pre>
+
+    <h3>Explicación</h3>
+    <ul>
+        <li><strong>Arreglo de juguetes</strong>: Imagina que tienes una lista con los nombres de tus juguetes
+            favoritos.</li>
+        <li><strong>forEach</strong>: Es como decir "Por cada juguete en la lista, haz algo".</li>
+        <li><strong>Función flecha</strong>: Es una manera rápida de escribir una pequeña acción que quieres hacer por
+            cada juguete. En este caso, la acción es mostrar el nombre del juguete.</li>
+    </ul>
+
+    <pre><code>
+Carro
+Muñeca
+Pelota
+Tren
+    </code></pre>
+
+    <a href="Practica.html">Ir a la Practica </a>
+
+
+</body>
+
+</html>
