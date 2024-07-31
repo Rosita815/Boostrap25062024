@@ -16,7 +16,7 @@ const Opciones_Footer = [
 /* Funcion para footer */
 function Mostrar_Footer() {
     let Contenedor = document.getElementById('V_Lista_Footer');
-    let Plantilla;
+    let Plantilla = "";
 
     Opciones_Footer.forEach(element => {
         if (element.Activo) {
