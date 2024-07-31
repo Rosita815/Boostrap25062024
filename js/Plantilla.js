@@ -14,8 +14,9 @@ B. -Plantilla
 C. -Ciclo de la parte 2 (2- Arreglo de Objetos)
 D Meter la Plantilla en el contenedor*/
 function Mostrar_LigaDeLaJusticia(Heroes){
-    let Contenedor
-    let Plantilla
+    let Contenedor/* A */
+    let Plantilla/* B */
+    /* C */
 
-    Contenedor.innerHTML = Plantilla
+    Contenedor.innerHTML = Plantilla/* D */
 }
