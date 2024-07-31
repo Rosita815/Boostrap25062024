@@ -43,7 +43,8 @@ function Mostrar_LigaDeLaJusticia(Heroes){ /* Se llama Firma */
     Heroes.forEach(element => {
         if (element) {
             Plantilla += `
-            Nombre: ${element.nombre}, bio:${element.bio}`
+            Nombre: ${element.nombre}
+            bio: ${element.bio} `
         }
        
         
