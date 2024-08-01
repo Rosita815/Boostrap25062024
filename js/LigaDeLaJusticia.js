@@ -50,11 +50,18 @@ function Mostrar_LigaDeLaJusticia(Heroes) { //Firma
     // //C 
     Heroes.forEach(element => {
     plantilla += `
-    <div>
-        <h2>${element.nombre}</h2>
-        <p>${element.bio}</p>
-        <img src="${element.img}" alt="${element.nombre}">
-    </div>`
+    <div class=" col-lg-4 mb-4">
+            <div class="card h-100">
+                <img class="card-img-top" src="${element.img}" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">${element.nombre}</h4>
+                    <p class="card-text">${element.bio}</p>
+                    <button type="button" name="" id="" class="btn btn-primary" btn-lg btn-block">Ver mas </button>
+
+                </div>
+            </div>
+        </div>
+        `
         
     });
 
